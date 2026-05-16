@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video — NEXASIM</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="mobile-topbar">
+  <button class="hamburger" id="hamburger">☰</button>
+  <div class="logo-icon" style="width:30px;height:30px;font-size:0.6rem;">NS</div>
+  <span class="logo-text">NEXASIM</span>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="logo-icon">NS</div>
+    <span class="logo-text">NEXASIM</span>
+  </div>
+  <nav class="sidebar-nav">
+    <p class="nav-label">Menu Utama</p>
+    <a href="dashboard.html" class="nav-item"><span class="icon">⊞</span><span>Dashboard</span></a>
+    <a href="materi.html" class="nav-item"><span class="icon">📚</span><span>Materi</span></a>
+    <a href="quiz.html" class="nav-item"><span class="icon">📝</span><span>Quizz</span></a>
+    <a href="video.html" class="nav-item active"><span class="icon">▶️</span><span>Video</span></a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="index.html" class="nav-item logout"><span class="icon">↪</span><span>Keluar</span></a>
+  </div>
+</aside>
+
+<main class="main-content">
+  <div class="greeting anim">Konten <span>Video</span>
+    <small style="font-size:0.75rem;color:var(--text-muted);font-weight:400;display:block;margin-top:4px;font-family:var(--font-body);">
+      Tonton dan pelajari materi lewat video
+    </small>
+  </div>
+
+  <div class="video-hero anim">
+    <div class="hero-icon">▶️</div>
+    <div class="hero-text">
+      <div class="hero-tag">Koleksi Video Pembelajaran</div>
+      <h1>Belajar Lebih Mudah dengan Video</h1>
+      <p>Akses video materi dari para pengajar terbaik. Tonton kapan saja, di mana saja.</p>
+    </div>
+  </div>
+
+  <div class="sec-head anim"><h2>Video Unggulan</h2></div>
+
+  <div id="featuredSection" class="anim"></div>
+
+  <div class="sec-head anim"><h2>Semua Video</h2></div>
+
+  <div class="filter-bar anim" style="display:block;margin-bottom:20px;">
+    <div style="position:relative;">
+      <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:0.95rem;color:var(--text-dim);pointer-events:none;" id="searchIcon">🔍</span>
+      <input type="text" id="videoSearch"
+        style="width:100%;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:11px 44px 11px 42px;color:var(--text);font-size:0.875rem;font-family:var(--font-body);outline:none;transition:border-color 0.2s,box-shadow 0.2s;"
+        placeholder="Search"
+        autocomplete="off"
+        onfocus="this.style.borderColor='rgba(0,210,255,0.4)';this.style.boxShadow='0 0 0 3px rgba(0,210,255,0.07)'"
+        onblur="this.style.borderColor='';this.style.boxShadow=''"
+      />
+      <button id="searchClear"
+        style="display:none;position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.06);border:none;color:var(--text-muted);font-size:0.75rem;cursor:pointer;width:22px;height:22px;border-radius:50%;align-items:center;justify-content:center;"
+        title="Hapus">✕</button>
+    </div>
+  </div>
+
+  <div class="video-grid" id="videoGrid">
+
+    <div class="video-card anim" data-cat="materi1"
+      data-vid="i2-vdREljXE?si=iA1Uo-FkQP1jXzTD"
+      data-subject="CS101 · Pertemuan 1"
+      data-title="Pengenalan Dasar Riset &amp; Metodologi Penelitian"
+      data-desc="Membahas paradigma penelitian, etika ilmiah, dan langkah-langkah dasar dalam menyusun riset yang valid.">
+      <div class="video-thumb">
+        <iframe src="https://www.youtube.com/embed/i2-vdREljXE?si=iA1Uo-FkQP1jXzTD" title="Video 1" allowfullscreen></iframe>
+        <div class="thumb-overlay"><div class="play-btn">▶</div></div>
+        <span class="thumb-cat teal"></span>
+      </div>
+      <div class="video-info">
+        <div class="video-subject">CS101 · Pertemuan 1</div>
+        <div class="video-title">Pengenalan Dasar Riset &amp; Metodologi Penelitian</div>
+        <div class="video-desc">Membahas paradigma penelitian, etika ilmiah, dan langkah-langkah dasar dalam menyusun riset yang valid.</div>
+        <div class="video-footer">
+          <button class="btn-pin" title="Pilih Video Unggulan">☐ Pilih</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card anim" data-cat="materi1"
+      data-vid="-kUopObHZrM?si=oHvQFnqABoOOCptw"
+      data-subject="CS101 · Pertemuan 2"
+      data-title="Identifikasi Masalah &amp; Rumusan Penelitian"
+      data-desc="Cara menentukan topik penelitian yang relevan dan merumuskan pertanyaan riset yang baik.">
+      <div class="video-thumb">
+        <iframe src="https://www.youtube.com/embed/-kUopObHZrM?si=oHvQFnqABoOOCptw" title="Video 2" allowfullscreen></iframe>
+        <div class="thumb-overlay"><div class="play-btn">▶</div></div>
+        <span class="thumb-cat teal"></span>
+      </div>
+      <div class="video-info">
+        <div class="video-subject">CS101 · Pertemuan 2</div>
+        <div class="video-title">Identifikasi Masalah &amp; Rumusan Penelitian</div>
+        <div class="video-desc">Cara menentukan topik penelitian yang relevan dan merumuskan pertanyaan riset yang baik.</div>
+        <div class="video-footer">
+          <button class="btn-pin" title="Pilih Video Ini">☐ Pilih</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card anim" data-cat="materi2"
+      data-vid="mclgL7cx7DA?si=Ld9FBuk68WwZQoKd"
+      data-subject="CS102 · Pertemuan 1"
+      data-title="Konsep Dasar &amp; Teori Pendukung"
+      data-desc="Penjelasan lengkap teori-teori utama yang menjadi landasan pembelajaran semester ini.">
+      <div class="video-thumb">
+        <iframe src="https://www.youtube.com/embed/mclgL7cx7DA?si=Ld9FBuk68WwZQoKd" title="Video 3" allowfullscreen></iframe>
+        <div class="thumb-overlay"><div class="play-btn">▶</div></div>
+        <span class="thumb-cat blue"></span>
+      </div>
+      <div class="video-info">
+        <div class="video-subject">CS102 · Pertemuan 1</div>
+        <div class="video-title">Konsep Dasar &amp; Teori Pendukung</div>
+        <div class="video-desc">Penjelasan lengkap teori-teori utama yang menjadi landasan pembelajaran semester ini.</div>
+        <div class="video-footer">
+          <button class="btn-pin" title="Pilih Video Ini">☐ Pilih</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card anim" data-cat="materi3"
+      data-vid="B_Dx8rv8ixQ?si=-Z1VOkgsgQp13e9m"
+      data-subject="CS103 · Pertemuan 1"
+      data-title="Analisis Data &amp; Interpretasi Hasil"
+      data-desc="Teknik analisis data kualitatif dan kuantitatif serta cara membaca hasil penelitian secara kritis.">
+      <div class="video-thumb">
+        <iframe src="https://www.youtube.com/embed/B_Dx8rv8ixQ?si=-Z1VOkgsgQp13e9m" title="Video 4" allowfullscreen></iframe>
+        <div class="thumb-overlay"><div class="play-btn">▶</div></div>
+        <span class="thumb-cat indigo"></span>
+      </div>
+      <div class="video-info">
+        <div class="video-subject">CS103 · Pertemuan 1</div>
+        <div class="video-title">Analisis Data &amp; Interpretasi Hasil</div>
+        <div class="video-desc">Teknik analisis data kualitatif dan kuantitatif serta cara membaca hasil penelitian secara kritis.</div>
+        <div class="video-footer">
+          <button class="btn-pin" title="Pilih Video Ini">☐ Pilih</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card anim" data-cat="materi2"
+      data-vid="jIqeXXkpt_Q?si=Xx7tNk_CGpizt4jq"
+      data-subject="CS102 · Pertemuan 2"
+      data-title="Diskusi &amp; Tanya Jawab Interaktif"
+      data-desc="Sesi diskusi dan tanya jawab bersama pengajar membahas permasalahan yang sering muncul di lapangan.">
+      <div class="video-thumb">
+        <iframe src="https://www.youtube.com/embed/jIqeXXkpt_Q?si=Xx7tNk_CGpizt4jq" title="Video 6" allowfullscreen></iframe>
+        <div class="thumb-overlay"><div class="play-btn">▶</div></div>
+        <span class="thumb-cat blue">Materi 2</span>
+      </div>
+      <div class="video-info">
+        <div class="video-subject">CS102 · Pertemuan 2</div>
+        <div class="video-title">Diskusi &amp; Tanya Jawab Interaktif</div>
+        <div class="video-desc">Sesi diskusi dan tanya jawab bersama pengajar membahas permasalahan yang sering muncul di lapangan.</div>
+        <div class="video-footer">
+          <button class="btn-pin" title="Pilih Video Ini">☐ Pilih</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Empty state -->
+  <div id="searchEmpty" style="display:none;text-align:center;padding:48px 16px;">
+    <div style="font-size:2rem;margin-bottom:10px;opacity:0.4;">🔍</div>
+    <div style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:4px;">Video tidak ditemukan</div>
+    <div style="font-size:0.82rem;color:var(--text-dim);">Coba kata kunci lain seperti nama materi atau kode pelajaran</div>
+  </div>
+
+</main>
+
+<script src="data.js"></script>
+<script>
+  if (!localStorage.getItem('hs_user')) window.location.href = 'index.html';
+
+  const FEATURED_KEY = 'hs_featured_video';
+
+  function renderFeatured() {
+    const section = document.getElementById('featuredSection');
+    const saved = localStorage.getItem(FEATURED_KEY);
+
+    if (!saved) {
+      section.innerHTML = `
+        <div style="background:var(--bg-card);border:1px dashed var(--border);border-radius:16px;padding:28px 32px;display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+          <div style="font-size:2rem;">☐</div>
+          <div>
+            <div style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:4px;">Belum ada video unggulan</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);">Klik tombol <strong style="color:var(--accent);">☐ Pilih</strong> pada video manapun untuk menampilkannya di sini.</div>
+          </div>
+        </div>`;
+      return;
+    }
+
+    const v = JSON.parse(saved);
+    section.innerHTML = `
+      <div class="featured-video" style="margin-bottom:8px;">
+        <div class="featured-thumb">
+          <iframe src="https://www.youtube.com/embed/${v.vid}"
+            title="Featured Video" allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+          </iframe>
+        </div>
+        <div class="featured-info">
+          <div class="featured-tag">✓ Dipilih</div>
+          <div class="featured-title">${v.title}</div>
+          <div class="featured-desc">${v.desc}</div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px;">
+            <a href="https://www.youtube.com/watch?v=${v.vid.split('?')[0]}" target="_blank" class="btn-watch">▶ Tonton di YouTube</a>
+            <button onclick="removeFeatured()" style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);color:#f87171;border-radius:8px;padding:9px 16px;font-size:0.8rem;font-weight:600;cursor:pointer;font-family:var(--font-body);">✕ Batal Pilih</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function removeFeatured() {
+    localStorage.removeItem(FEATURED_KEY);
+    renderFeatured();
+    updatePinButtons(null);
+  }
+
+  function updatePinButtons(activeVid) {
+    document.querySelectorAll('.video-card').forEach(card => {
+      const btn = card.querySelector('.btn-pin');
+      if (!btn) return;
+      const isActive = card.dataset.vid === activeVid;
+      card.classList.toggle('is-featured', isActive);
+      btn.textContent = isActive ? '✓ Dipilih' : '☐ Pilih';
+      btn.style.color = isActive ? 'var(--teal)' : '';
+      btn.style.borderColor = isActive ? 'rgba(45,212,191,0.35)' : '';
+      btn.style.background = isActive ? 'rgba(45,212,191,0.08)' : '';
+    });
+  }
+
+  // Search logic
+  const searchInput = document.getElementById('videoSearch');
+  const searchClear = document.getElementById('searchClear');
+  const searchEmpty = document.getElementById('searchEmpty');
+
+  function doSearch(query) {
+    const q = query.trim().toLowerCase();
+    let visibleCount = 0;
+    document.querySelectorAll('.video-card').forEach(card => {
+      const subject = (card.dataset.subject || '').toLowerCase();
+      const title = (card.dataset.title || '').toLowerCase();
+      const desc = (card.dataset.desc || '').toLowerCase();
+      const catLabel = card.querySelector('.thumb-cat')?.textContent.toLowerCase() || '';
+      const match = !q || subject.includes(q) || title.includes(q) || desc.includes(q) || catLabel.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    });
+    searchEmpty.style.display = visibleCount === 0 ? 'block' : 'none';
+    searchClear.style.display = q.length > 0 ? 'flex' : 'none';
+  }
+
+  searchInput.addEventListener('input', () => doSearch(searchInput.value));
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    searchInput.focus();
+    doSearch('');
+  });
+
+  document.querySelectorAll('.video-card').forEach(card => {
+    const pinBtn = card.querySelector('.btn-pin');
+
+    if (pinBtn) {
+      pinBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const saved = localStorage.getItem(FEATURED_KEY);
+        const currentVid = card.dataset.vid;
+        if (saved && JSON.parse(saved).vid === currentVid) {
+          removeFeatured();
+        } else {
+          const data = {
+            vid: currentVid,
+            subject: card.dataset.subject,
+            title: card.dataset.title,
+            desc: card.dataset.desc,
+            presenter: card.dataset.presenter,
+            color: card.dataset.color
+          };
+          localStorage.setItem(FEATURED_KEY, JSON.stringify(data));
+          renderFeatured();
+          updatePinButtons(currentVid);
+        }
+      });
+    }
+
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('.btn-pin')) return;
+      const subject = card.dataset.subject || '';
+      const title = card.dataset.title || '';
+      const presenter = card.dataset.presenter || '';
+      const vid = card.dataset.vid || '';
+      trackActivity({
+        type: 'video',
+        label: `Video · ${subject}`,
+        title: title,
+        meta: presenter,
+        href: 'video.html',
+        badge: 'Video'
+      });
+      window.open(`https://www.youtube.com/watch?v=${vid.split('?')[0]}`, '_blank');
+    });
+  });
+
+  // Init
+  renderFeatured();
+  const savedFeatured = localStorage.getItem(FEATURED_KEY);
+  if (savedFeatured) {
+    updatePinButtons(JSON.parse(savedFeatured).vid);
+  }
+</script>
+</body>
+</html>
